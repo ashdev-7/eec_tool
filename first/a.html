@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insulator String Voltage Distribution and Efficiency Calculator</title>
+  <link rel="stylesheet" href="a.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Insulator String Voltage Distribution and Efficiency Calculator</h1>
+    <label for="problemType">Select Problem:</label>
+    <select id="problemType">
+      <option value="1">Problem 1: 33kV Overhead Line with 3 Insulators</option>
+      <option value="2">Problem 2: 3-Phase Transmission Line with Disc Insulators</option>
+      <option value="3">Problem 3: Line Unit Voltage with Shunt Capacitance</option>
+      <option value="4">Problem 4: Substation Bus-bar Voltage</option>
+      <option value="5">Problem 5: Safe Working Voltage of Insulator String</option>
+      <option value="6">Problem 6: Suspension Insulator String with Different Capacitances</option>
+    </select>
+    <!-- Problem-specific Inputs will appear here -->
+    <div id="problemInputs"></div>
+    <button onclick="calculateProblem()">Calculate</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="a.js"></script>
+</body>
+</html>
